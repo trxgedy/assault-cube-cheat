@@ -8,7 +8,7 @@ internal cheat for assault cube v1.3.0.2
 - infinite ammo
 - no recoil
 - rapid fire
-- aimbot
+- aimbot (mouse button 5)
 
 ## 🔮 To Do:
 - imgui menu
