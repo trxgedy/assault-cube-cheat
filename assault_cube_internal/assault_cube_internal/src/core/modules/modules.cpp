@@ -32,9 +32,9 @@ namespace modules
 		for ( size_t i = 0x130; i <= 0x140; i += 4 )
 		{
 			if ( *reinterpret_cast< int * >( this->player_addr + i ) != 0 )          // each gun has its own ammo offset in the entity class ( 0x130 - 0x140 ) 
-			{																		 // the recoil is organized in the same order as the ammo offsets ( 0x154 - 0x164 )
-				return i + 0x24;													 // if the ammo offset being checked != 0, we know which gun is selected
-			}																		 // the offset of the current gun's ammo + 0x24 = current gun's recoil offset
+			{									 // the recoil is organized in the same order as the ammo offsets ( 0x154 - 0x164 )
+				return i + 0x24;						 // if the ammo offset being checked != 0, we know which gun is selected
+			}									 // the offset of the current gun's ammo + 0x24 = current gun's recoil offset
 		}
 	}
 
